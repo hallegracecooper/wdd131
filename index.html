@@ -1,11 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Halle Cooper</title>
+    <link rel="stylesheet" href="week01/styles/layout.css">
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            fetch('./week01/basic-layout.html')
+                .then(response => response.text())
+                .then(html => {
+                    document.body.innerHTML += html;
+                });
+        });
+    </script>
 </head>
+
 <body>
-    <label for="">test</label>
 </body>
+
 </html>
