@@ -1,23 +1,54 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-US">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Halle Cooper</title>
-    <link rel="stylesheet" href="week01/styles/layout.css">
-    <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            fetch('./week01/basic-layout.html')
-                .then(response => response.text())
-                .then(html => {
-                    document.body.innerHTML += html;
-                });
-        });
-    </script>
+    <title>WDD 131 - Dynamic Web Fundamentals - Halle Cooper</title>
+    <meta name="description" content="WDD 131 - Dynamic Web Fundamentals by Halle Cooper. Learn about responsive web design, HTML, CSS, and JavaScript with a focus on usability, accessibility, and best practices.">
+    <meta name="author" content="Halle Cooper">
+    <link rel="stylesheet" href="styles/base.css">
 </head>
 
 <body>
+    <header>
+        <h1>WDD 131 - Dynamic Web Fundamentals</h1>
+        <nav>
+            <ul>
+                <li><a href="https://www.linkedin.com/in/halle-driscoll-b26576310/" target="_blank">LinkedIn Profile</a></li>
+                <li><a href="https://byui.instructure.com/" target="_blank">I-Learn</a></li>
+                <li><a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/1-ne/3?lang=eng#title_number1" target="_blank">1 Nephi 3:7</a></li>
+                <li><a href="#">Final Project Folder</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="card">
+            <h2>About Me</h2>
+            <p>Hello! I am Halle Cooper. I was raised in a small town called Aberdeen, Idaho. I currently live with my wonderful husband of four years in Burley, Idaho. I work as a sixth grade teacher at Mountain View Elementary and a dance teacher at En Pointe. Some of my favorite things to do are travel and read.</p>
+            <img src="images/halleAndBryton.JPG" alt="Halle and Bryton Cooper" class="about-me-img">
+            <p>Learn more about me and my background <a href="https://www.instagram.com/hallegracecooper/">here!</a></p>
+        </section>
+
+        <section class="card">
+            <h2>Aberdeen, Idaho</h2>
+            <img src="images/aberdeen.jpg" alt="Aberdeen, Idaho" class="aberdeen-img">
+            <p>Aberdeen, Idaho, is a charming small town located in Bingham County in southeastern Idaho. Known for its picturesque rural setting and close-knit community, Aberdeen is surrounded by expansive farmland and offers a peaceful lifestyle away from the hustle and bustle of city life. With a welcoming atmosphere and a strong sense of local pride, Aberdeen embodies the quintessential small-town experience in Idaho.</p>
+            <p>For more information on the charming town of Aberdeen, click <a href="https://en.wikipedia.org/wiki/Aberdeen,_Idaho">here!</a></p>
+            <p>To visit their website, click <a href="https://aberdeenidaho.us/index.html">here!</a></p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="currentyear"></span> Halle Cooper, United States</p>
+        <p id="lastModified"></p>
+    </footer>
+
+    <script>
+        document.getElementById('currentyear').textContent = new Date().getFullYear();
+        document.getElementById('lastModified').textContent = 'Last Modified: ' + document.lastModified;
+    </script>
 </body>
 
 </html>
