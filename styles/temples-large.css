@@ -1,0 +1,15 @@
+main {
+    max-width: 1200px;
+    margin: 2rem auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+nav ul {
+    flex-direction: row;
+}
+
+nav li {
+    margin: 0 1rem;
+}

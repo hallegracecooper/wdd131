@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temples - Halle Cooper</title>
+    <meta name="description" content="A collection of temple images and information by Halle Cooper.">
+    <meta name="author" content="Halle Cooper">
+    <link rel="stylesheet" href="styles/temples.css">
+    <link rel="stylesheet" href="styles/temples-large.css" media="screen and (min-width: 768px)">
+    <script src="scripts/temples.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h1>Temples</h1>
+        <button id="hamburgerBtn">☰</button>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="old.html">Old</a></li>
+                <li><a href="new.html">New</a></li>
+                <li><a href="large.html">Large</a></li>
+                <li><a href="small.html">Small</a></li>
+            </ul>
+        </nav>
+    </header>    
+
+    <main>
+        <h2>Temple Collection</h2>
+        <figure>
+            <img src="images/idahofallstemple.jpg" alt="Idaho Falls Temple">
+            <figcaption>Idaho Falls, Idaho Temple</figcaption>
+        </figure>
+        <figure>
+            <img src="images/pocatellotemple.jpg" alt="Pocatello Temple">
+            <figcaption>Pocatello, Idaho Temple</figcaption>
+        </figure>
+        <figure>
+            <img src="images/slctemple.jpg" alt="SLC">
+            <figcaption>Salt Lake City, Utah Temple</figcaption>
+        </figure>
+        <figure>
+            <img src="images/saopaulotemple.jpg" alt="Sao Paulo Temple">
+            <figcaption>Sao Paulo, Brazil Temple</figcaption>
+        </figure>
+        <figure>
+            <img src="images/rometemple.jpg" alt="Rome Temple">
+            <figcaption>Rome, Italy Temple</figcaption>
+        </figure>
+        <figure>
+            <img src="images/londontemple.jpg" alt="London Temple">
+            <figcaption>London, England Temple</figcaption>
+        </figure>
+        <figure>
+            <img src="images/stgeorgetemple.jpg" alt="St. George Temple">
+            <figcaption>St. George, Utah Temple</figcaption>
+        </figure>
+        <figure>
+            <img src="images/bountifultemple.jpg" alt="Bountiful Temple">
+            <figcaption>Bountiful, Utah Temple</figcaption>
+        </figure>
+        <figure>
+            <img src="images/meridiantemple.jpg" alt="Meridian Temple">
+            <figcaption>Meridian, Idaho Temple</figcaption>
+        </figure>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="currentyear"></span> Halle Cooper, United States</p>
+        <p id="lastModified"></p>
+    </footer>
+
+    <script>
+        document.getElementById('currentyear').textContent = new Date().getFullYear();
+        document.getElementById('lastModified').textContent = 'Last Modified: ' + document.lastModified;
+    </script>
+</body>
+
+</html>
