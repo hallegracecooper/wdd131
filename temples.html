@@ -8,18 +8,19 @@
     <meta name="description" content="A collection of temple images and information by Halle Cooper.">
     <meta name="author" content="Halle Cooper">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet" href="styles/temples.css">
+    <link rel="stylesheet" href="styles/temples.css" media="screen and (max-width: 768px)">
     <link rel="preload" href="styles/temples.css" as="style">
     <link rel="stylesheet" href="styles/temples-large.css" media="screen and (min-width: 768px)">
     <script src="scripts/temples.js" defer></script>
 </head>
-
 <body>
     <header>
-        <h1>Temples</h1>
         <button id="hamburgerBtn">☰</button>
-        <nav>
-            <ul>
+        <div>
+            <h1>Temples</h1>
+        </div>
+        <nav id="nav-links-holder" class="hidden">
+            <ul class="nav-links">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="old.html">Old</a></li>
                 <li><a href="new.html">New</a></li>
@@ -27,46 +28,50 @@
                 <li><a href="small.html">Small</a></li>
             </ul>
         </nav>
-    </header>    
+    </header>
 
     <main>
-        <h2>Temple Collection</h2>
-        <figure>
-            <img src="images/idahofallstemple.jpg" alt="Idaho Falls Temple" width="600" height="400" loading="lazy">
-            <figcaption>Idaho Falls, Idaho Temple</figcaption>
-        </figure>
-        <figure>
-            <img src="images/pocatellotemple.jpg" alt="Pocatello Temple" width="600" height="400" loading="lazy">
-            <figcaption>Pocatello, Idaho Temple</figcaption>
-        </figure>
-        <figure>
-            <img src="images/slctemple.jpg" alt="SLC" width="600" height="400" loading="lazy">
-            <figcaption>Salt Lake City, Utah Temple</figcaption>
-        </figure>
-        <figure>
-            <img src="images/saopaulotemple.jpg" alt="Sao Paulo Temple" width="600" height="400" loading="lazy">
-            <figcaption>Sao Paulo, Brazil Temple</figcaption>
-        </figure>
-        <figure>
-            <img src="images/rometemple.jpg" alt="Rome Temple" width="600" height="400" loading="lazy">
-            <figcaption>Rome, Italy Temple</figcaption>
-        </figure>
-        <figure>
-            <img src="images/londontemple.jpg" alt="London Temple" width="600" height="400" loading="lazy">
-            <figcaption>London, England Temple</figcaption>
-        </figure>
-        <figure>
-            <img src="images/stgeorgetemple.jpg" alt="St. George Temple" width="600" height="400" loading="lazy">
-            <figcaption>St. George, Utah Temple</figcaption>
-        </figure>
-        <figure>
-            <img src="images/bountifultemple.jpg" alt="Bountiful Temple" width="600" height="400" loading="lazy">
-            <figcaption>Bountiful, Utah Temple</figcaption>
-        </figure>
-        <figure>
-            <img src="images/meridiantemple.jpg" alt="Meridian Temple" width="600" height="400" loading="lazy">
-            <figcaption>Meridian, Idaho Temple</figcaption>
-        </figure>
+        <div class="collection-title">
+            <h2>Temple Collection</h2>
+        </div>
+        <div class="photo-holder">
+            <figure>
+                <img src="images/idahofallstemple.jpg" alt="Idaho Falls Temple" width="600" height="400" loading="lazy">
+                <figcaption>Idaho Falls, Idaho Temple</figcaption>
+            </figure>
+            <figure>
+                <img src="images/pocatellotemple.jpg" alt="Pocatello Temple" width="600" height="400" loading="lazy">
+                <figcaption>Pocatello, Idaho Temple</figcaption>
+            </figure>
+            <figure>
+                <img src="images/slctemple.jpg" alt="SLC" width="600" height="400" loading="lazy">
+                <figcaption>Salt Lake City, Utah Temple</figcaption>
+            </figure>
+            <figure>
+                <img src="images/saopaulotemple.jpg" alt="Sao Paulo Temple" width="600" height="400" loading="lazy">
+                <figcaption>Sao Paulo, Brazil Temple</figcaption>
+            </figure>
+            <figure>
+                <img src="images/rometemple.jpg" alt="Rome Temple" width="600" height="400" loading="lazy">
+                <figcaption>Rome, Italy Temple</figcaption>
+            </figure>
+            <figure>
+                <img src="images/londontemple.jpg" alt="London Temple" width="600" height="400" loading="lazy">
+                <figcaption>London, England Temple</figcaption>
+            </figure>
+            <figure>
+                <img src="images/stgeorgetemple.jpg" alt="St. George Temple" width="600" height="400" loading="lazy">
+                <figcaption>St. George, Utah Temple</figcaption>
+            </figure>
+            <figure>
+                <img src="images/bountifultemple.jpg" alt="Bountiful Temple" width="600" height="400" loading="lazy">
+                <figcaption>Bountiful, Utah Temple</figcaption>
+            </figure>
+            <figure>
+                <img src="images/meridiantemple.jpg" alt="Meridian Temple" width="600" height="400" loading="lazy">
+                <figcaption>Meridian, Idaho Temple</figcaption>
+            </figure>
+        </div>
     </main>
 
     <footer>
