@@ -1,0 +1,11 @@
+.hero {
+    max-width: 1500px; /* Optional: limit the width of the hero section */
+    margin: 0 auto; /* Center the hero section */
+    overflow: hidden; /* Prevent overflow issues */
+}
+
+.hero img {
+    width: 100%;
+    height: auto; /* Maintain aspect ratio */
+    /* or use one of the other methods mentioned */
+}
