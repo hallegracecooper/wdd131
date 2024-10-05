@@ -1,0 +1,135 @@
+@media (min-width: 768px) {
+    :root {
+        --primary-color: #E74C3C;
+        /* Red */
+        --secondary-color: #2C3E50;
+        /* Dark Blue */
+        --background-color: #ECF0F1;
+        /* Light Gray */
+        --text-color: #34495E;
+        /* Dark Gray */
+        --accent-color: #16A085;
+        /* Green */
+        --font-family: 'Roboto', sans-serif;
+    }
+
+    html {
+        background-color: #c4c4c4;
+    }
+
+    body {
+        font-family: var(--font-family);
+        background-color: var(--background-color);
+        color: var(--text-color);
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        max-width: 1210px;
+        margin: auto;
+    }
+
+
+    header {
+        text-align: center;
+        background-color: var(--secondary-color);
+        padding: 20px;
+        padding-top: 5px;
+        color: white;
+        font-size: 1.3rem;
+        font-weight: bold;
+    }
+
+    header::after {
+        content: '';
+        display: block;
+        height: 10px;
+        background-color: #E74C3C;
+    }
+
+    /* Hero section */
+    #hero {
+        position: relative;
+        background-color: #c4c4c4;
+        /* Wireframe placeholder color */
+        height: 500px;
+        /* Increased height for larger view */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    /* Info boxes */
+    .info-box {
+        background-color: rgba(255, 255, 255, 0.9);
+        padding: 25px;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        position: absolute;
+        width: 300px;
+    }
+
+    .image-data-weather {
+        position: relative;
+        display: flex;
+        justify-content: center;
+    }
+
+    .hero-image {
+        width: 80%;
+    }
+
+    .red-orange-box {
+        width: 10%;
+        background-color: var(--primary-color);
+    }
+
+    .data {
+        position: absolute;
+        top: 4%;
+        left: 12%;
+        background-color: #ECF0F1;
+        opacity: .7;
+    }
+
+    .weather {
+        position: absolute;
+        bottom: 4%;
+        right: 12%;
+        background-color: #ECF0F1;
+        opacity: .7;
+    }
+
+    .info-title {
+        background-color: var(--accent-color);
+        color: white;
+        padding: 5px 10px;
+        border-radius: 5px;
+        font-weight: bold;
+        margin-bottom: 10px;
+        display: inline-block;
+        font-size: 1.2rem;
+    }
+
+    ul {
+        list-style-type: none;
+        padding: 0;
+    }
+
+    li {
+        margin-bottom: 8px;
+        font-size: 1.1rem;
+    }
+
+
+    footer {
+        text-align: center;
+        background-color: var(--secondary-color);
+        color: white;
+        padding: 25px;
+        font-size: 1.2rem;
+    }
+
+    #lastModified {
+        font-weight: bold;
+    }
+}
