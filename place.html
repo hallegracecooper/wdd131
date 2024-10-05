@@ -6,7 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Liguria, Italy</title>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+    <meta name="description" content="Information and weather data on Liguria, Italy.">
+    <meta name="author" content="Halle Cooper">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/place.css">
     <link rel="stylesheet" href="styles/place-large.css" media="(min-width: 768px)">
 </head>
@@ -15,45 +19,42 @@
     <header>
         <h1>Ligura, Italy Coast</h1>
     </header>
-    <div class="image-data-weather">
-        <div class="red-orange-box">
-
+    <main>
+        <div class="image-data-weather">
+            <div class="red-orange-box">
+    
+            </div>
+            <img src="images/Italysunset.webp" alt="Italy Sunset" class="hero-image">
+            <div class="red-orange-box">
+    
+            </div>
+            <section class="data">
+                <h2>Data</h2>
+                <ul>
+                    <li><strong>Country:</strong> Italy</li>
+                    <li><strong>Region:</strong> Amalfi Coast</li>
+                    <li><strong>Famous For:</strong> Stunning views, culture</li>
+                    <li><strong>Climate:</strong> Mediterranean</li>
+                    <li><strong>Best time to visit:</strong> Spring to Fall</li>
+                </ul>
+            </section>
+    
+            <section class="weather">
+                <h2>Weather</h2>
+                <img src="images/sun-icon.svg" alt="Sunny" class="weather-icon-mobile">
+                <ul>
+                    <li><strong>Temperature:</strong> 18°C</li>
+                    <li><strong>Wind Speed:</strong> 10 km/h</li>
+                    <li><strong>Wind Chill:</strong> <span id="windChill"></span></li>
+                    <li><strong>Conditions:</strong> Sunny</li>
+                </ul>
+            </section>
         </div>
-        <img src="images/Italysunset.webp" alt="Italy Sunset" class="hero-image">
-        <div class="red-orange-box">
-
-        </div>
-        <section class="data">
-            <h2>Data</h2>
-            <ul>
-                <li><strong>Country:</strong> Italy</li>
-                <li><strong>Region:</strong> Amalfi Coast</li>
-                <li><strong>Famous For:</strong> Stunning views, culture</li>
-                <li><strong>Climate:</strong> Mediterranean</li>
-                <li><strong>Best time to visit:</strong> Spring to Fall</li>
-            </ul>
-        </section>
-
-        <section class="weather">
-            <h2>Weather</h2>
-            <img src="images/sun-icon.svg" alt="Sunny" class="weather-icon-mobile">
-            <ul>
-                <li><strong>Temperature:</strong> 18°C</li>
-                <li><strong>Wind Speed:</strong> 10 km/h</li>
-                <li><strong>Wind Chill:</strong> <span id="windChill"></span></li>
-                <li><strong>Conditions:</strong> Sunny</li>
-            </ul>
-        </section>
-    </div>
+    </main>
     <footer>
         <p>Beautiful Italy &copy; <span id="currentyear"></span> Halle Cooper, United States</p>
         <p id="lastModified"></p>
     </footer>
-
-    <script>
-        document.getElementById('currentyear').textContent = new Date().getFullYear();
-        document.getElementById('lastModified').textContent = 'Last Modified: ' + document.lastModified;
-    </script>
+    <script src="scripts/place.js" defer></script>
 </body>
-
 </html>
