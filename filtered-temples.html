@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temples - Halle Cooper</title>
+    <meta name="description" content="A collection of temple images and information by Halle Cooper.">
+    <meta name="author" content="Halle Cooper">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="styles/temples.css" media="screen and (max-width: 768px)">
+    <link rel="stylesheet" href="styles/filtered-temples-large.css" media="screen and (min-width: 768px)">
+    <script src="scripts/filtered-temples.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <button id="hamburgerBtn">☰</button>
+        <div>
+            <h1>Temples</h1>
+        </div>
+        <nav id="nav-links-holder" class="hidden">
+            <ul class="nav-links">
+                <li><a href="#" class="nav-link" data-filter="all">Home</a></li>
+                <li><a href="#" class="nav-link" data-filter="old">Old</a></li>
+                <li><a href="#" class="nav-link" data-filter="new">New</a></li>
+                <li><a href="#" class="nav-link" data-filter="large">Large</a></li>
+                <li><a href="#" class="nav-link" data-filter="small">Small</a></li>
+            </ul>
+        </nav>        
+    </header>
+
+    <main>
+        <div class="collection-title">
+            <h2>Temple Collection</h2>
+        </div>
+        <div class="photo-holder">
+        
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="currentyear"></span> Halle Cooper, United States</p>
+        <p id="lastModified"></p>
+    </footer>
+
+    <script>
+        document.getElementById('currentyear').textContent = new Date().getFullYear();
+        document.getElementById('lastModified').textContent = 'Last Modified: ' + document.lastModified;
+    </script>
+</body>
+
+</html>
