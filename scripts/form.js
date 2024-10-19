@@ -7,7 +7,6 @@ document.addEventListener('DOMContentLoaded', () => {
         { id: "jj-1969", name: "warp equalizer", averagerating: 5.0 }
     ];
 
-    // Populate product options
     const productSelect = document.getElementById('product');
     products.forEach(product => {
         const option = document.createElement('option');
@@ -16,16 +15,13 @@ document.addEventListener('DOMContentLoaded', () => {
         productSelect.appendChild(option);
     });
 
-    // Review submission counter using localStorage
     const form = document.getElementById('reviewForm');
     form.addEventListener('submit', (e) => {
-        e.preventDefault();  // Prevent form from submitting to demonstrate functionality
+        e.preventDefault();  
         let reviewCount = localStorage.getItem('reviewCount') || 0;
         reviewCount++;
         localStorage.setItem('reviewCount', reviewCount);
         alert(`Review submitted! You have submitted ${reviewCount} review(s).`);
 
-        // Redirect to review.html after successful submission (uncomment for production use)
-        // window.location.href = 'review.html';
     });
 });
