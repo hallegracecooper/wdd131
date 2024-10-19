@@ -8,6 +8,9 @@
     <meta name="description" content="Product Review Form - Learning how to use JavaScript to make a form.">
     <meta name="author" content="Halle Cooper">
     <link rel="stylesheet" href="styles/form.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -61,15 +64,15 @@
         <input type="text" id="username" name="username">
         <br>
 
-        <input type="submit" value="Submit">
+        <input type="submit">
     </form>
-    
+
     <footer>
         <p>&copy; <span id="currentyear"></span> Halle Cooper, United States</p>
         <p id="lastModified"></p>
     </footer>
 
-    <script src="scripts/form.js"></script>
+    <script src="scripts/form.js" defer></script>
     <script>
         document.getElementById('currentyear').textContent = new Date().getFullYear();
         document.getElementById('lastModified').textContent = 'Last Modified: ' + document.lastModified;
