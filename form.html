@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Review Form</title>
+    <meta name="description" content="Product Review Form - Learning how to use JavaScript to make a form.">
+    <meta name="author" content="Halle Cooper">
+    <link rel="stylesheet" href="styles/form.css">
+</head>
+
+<body>
+    <h1>Product Review Form</h1>
+    
+    <form id="reviewForm" method="GET" action="review.html">
+        <!-- Product Name -->
+        <label for="product">Product Name:</label>
+        <select id="product" name="product" required>
+            <option value="" disabled selected>Select a Product...</option>
+            <!-- Dynamically populated by JavaScript -->
+        </select>
+        <br>
+
+        <!-- Overall Rating -->
+        <fieldset>
+            <legend>Overall Rating:</legend>
+            <label>
+                <input type="radio" id="rating-1" name="rating" value="1" required> ☆
+            </label>
+            <label>
+                <input type="radio" id="rating-2" name="rating" value="2"> ☆☆
+            </label>
+            <label>
+                <input type="radio" id="rating-3" name="rating" value="3"> ☆☆☆
+            </label>
+            <label>
+                <input type="radio" id="rating-4" name="rating" value="4"> ☆☆☆☆
+            </label>
+            <label>
+                <input type="radio" id="rating-5" name="rating" value="5"> ☆☆☆☆☆
+            </label>
+        </fieldset>
+        <br>
+
+        <!-- Date of Installation -->
+        <label for="installDate">Date of Installation:</label>
+        <input type="date" id="installDate" name="installDate" required>
+        <br>
+
+        <!-- Useful Features -->
+        <fieldset>
+            <legend>Useful Features (check all that apply):</legend>
+            <label><input type="checkbox" id="feature-1" name="features" value="durability"> Durability</label>
+            <label><input type="checkbox" id="feature-2" name="features" value="efficiency"> Efficiency</label>
+            <label><input type="checkbox" id="feature-3" name="features" value="cost"> Cost</label>
+        </fieldset>
+        <br>
+
+        <!-- Written Review -->
+        <label for="reviewText">Written Review:</label>
+        <textarea id="reviewText" name="reviewText" rows="4" cols="50" placeholder="Write your review..."></textarea>
+        <br>
+
+        <!-- User Name -->
+        <label for="username">Your Name (optional):</label>
+        <input type="text" id="username" name="username">
+        <br>
+
+        <!-- Submit Button -->
+        <input type="submit" value="Submit Review">
+    </form>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; <span id="currentyear"></span> Halle Cooper, United States</p>
+        <p id="lastModified"></p>
+    </footer>
+
+    <script src="scripts/form.js"></script>
+    <script>
+        document.getElementById('currentyear').textContent = new Date().getFullYear();
+        document.getElementById('lastModified').textContent = 'Last Modified: ' + document.lastModified;
+    </script>
+</body>
+
+</html>

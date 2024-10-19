@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Review Confirmation</title>
+    <meta name="description" content="Page made for confirmation as well as review counts.">
+    <meta name="author" content="Halle Cooper">
+    <link rel="stylesheet" href="styles/form.css">
+</head>
+<body>
+    <h1>Thank you for your review!</h1>
+    <p>Your review has been successfully submitted.</p>
+
+    <footer>
+        <p>&copy; <span id="currentyear"></span> Halle Cooper, United States</p>
+        <p id="lastModified"></p>
+    </footer>
+
+    <script>
+        document.getElementById('currentyear').textContent = new Date().getFullYear();
+        document.getElementById('lastModified').textContent = 'Last Modified: ' + document.lastModified;
+
+        const reviewCount = localStorage.getItem('reviewCount') || 0;
+        document.body.insertAdjacentHTML('beforeend', `<p>You have submitted ${reviewCount} review(s) so far.</p>`);
+    </script>
+</body>
+</html>
