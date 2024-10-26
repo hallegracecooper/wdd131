@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-US">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,7 +13,7 @@
         <p id="feedbackCountDisplay" class="feedback-count"></p>
 
 
-        <form id="feedbackForm" method="get" action="feedback.html">
+        <form id="feedbackForm" method="get" action="projectFormFeedback.html">
             <label for="name">Your Name:</label>
             <input type="text" id="name" name="name" placeholder="Enter your name" required>
 
@@ -52,7 +52,20 @@
             <input type="submit" value="Submit Feedback">
         </form>
     </main>
-    <script src="feedback.js"></script>
+    <<script>
+        document.getElementById("wellnessForm").addEventListener("submit", function(event) {
+            event.preventDefault(); // Prevent default form submission
+    
+            // Retrieve form data
+            const feedbackData = this.elements['feedback'].value;
+    
+            // Save feedback to localStorage
+            localStorage.setItem("userFeedback", feedbackData);
+    
+            // Redirect to feedback confirmation page
+            window.location.href = "projectFormFeedback.html";
+        });
+    </script>    
 </body>
 </html>
 

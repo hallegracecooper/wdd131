@@ -1,0 +1,58 @@
+/* General Styles */
+html, body {
+    height: 100%; /* Set the height to 100% for both html and body */
+    margin: 0; /* Remove default margin */
+}
+
+body {
+    font-family: Arial, sans-serif; /* Adjust this to match your home page font */
+    background-color: #002147; /* Light background color */
+    color: #002147; /* Dark text color */
+    display: flex; /* Enable flexbox */
+    flex-direction: column; /* Align children vertically */
+    justify-content: space-between; /* Space between header, main, and footer */
+}
+
+/* Header Styles */
+header {
+    background-color: #FF4136; /* Navy blue background */
+    color: #ffffff; /* White text */
+    text-align: center;
+    padding: 20px;
+}
+
+/* Main Content Styles */
+main {
+
+    max-width: 600px; /* Centering and limiting width */
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #ffffff; /* White background for the content */
+    border-radius: 5px;
+    text-align: center;
+}
+
+/* Button Styles */
+button {
+    background-color: #e63946;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #d62839; /* Darker red on hover */
+}
+
+/* Footer Styles */
+footer {
+    width: 100%;
+    text-align: center;
+    padding: 15px;
+    background-color: #FF4136;
+    color: #fff;
+    font-size: 0.9em;
+}
+
