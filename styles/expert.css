@@ -96,7 +96,6 @@ footer {
     color: #fff;
     margin-top: 20px;
     font-size: 0.9em;
-    position: absolute;
 }
 
 @media screen and (max-width: 768px) {
