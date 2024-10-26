@@ -54,12 +54,12 @@ main {
 
 .hero {
     position: relative;
-    height: 800px; 
+    height: 850px; 
     overflow: hidden;
 }
 
 .hero-background {
-    background-image: url(images/heroimage.webd);
+    background-image: url('../images/healthliving.png');
     background-size: cover;
     background-position: center;
     height: 100%;
@@ -81,6 +81,7 @@ main {
 .recipe {
     align-self: flex-start;
     margin-right: auto;
+    align-items: center;
 }
 
 .challenge {

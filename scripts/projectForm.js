@@ -8,6 +8,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
     form.addEventListener('submit', (e) => {
         e.preventDefault();
+        if (!name || !email || !exerciseRating || !nutritionRating || !waterIntake) {
+            alert('Please fill out all required fields.');
+            return;
+        }
 
         const name = document.getElementById('name').value;
         const email = document.getElementById('email').value;
