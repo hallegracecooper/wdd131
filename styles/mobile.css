@@ -1,23 +1,20 @@
-/* Basic Reset */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Body Styling */
 body {
     font-family: Arial, sans-serif;
-    background-color: #001f3f; /* Navy Blue */
+    background-color: #001f3f;
     color: #fff;
     line-height: 1.6;
 }
 
-/* Header */
 header {
     text-align: center;
     padding: 20px;
-    background-color: #FF4136; /* Red */
+    background-color: #FF4136;
 }
 
 header h1 {
@@ -25,7 +22,6 @@ header h1 {
     color: #fff;
 }
 
-/* Navigation Styling */
 nav ul {
     display: flex;
     justify-content: center;
@@ -44,10 +40,9 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    color: #FF4136; /* Red for hover effect */
+    color: #FF4136;
 }
 
-/* Main Content */
 main {
     background-color: #fff;
     color: #000;
@@ -67,20 +62,19 @@ main {
     border-radius: 10px;
 }
 
-/* Section Styling */
 section {
     margin-bottom: 20px;
 }
 
 h2 {
-    color: #001f3f; /* Navy Blue for headings */
+    color: #001f3f;
     font-family: Georgia, serif;
     margin-bottom: 10px;
 }
 
 .recipe, .challenge {
     padding: 15px;
-    border: 2px solid #001f3f; /* Navy Blue border */
+    border: 2px solid #001f3f;
     border-radius: 5px;
 }
 
@@ -89,15 +83,15 @@ h2 {
     color: #333;
 }
 
-/* Footer Styling */
 footer {
     text-align: center;
     padding: 15px;
-    background-color: #FF4136; /* Red */
+    background-color: #FF4136;
     color: #fff;
     margin-top: 20px;
     font-size: 0.9em;
 }
+
 
 
 

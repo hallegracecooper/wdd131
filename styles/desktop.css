@@ -1,25 +1,22 @@
-/* Basic Reset */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Body Styling */
 body {
     font-family: Arial, sans-serif;
-    background-color: #001f3f; /* Navy Blue */
+    background-color: #001f3f;
     color: #fff;
     line-height: 1.6;
 }
 
-/* Header */
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 20px 40px;
-    background-color: #FF4136; /* Red */
+    background-color: #FF4136;
 }
 
 header h1 {
@@ -40,10 +37,9 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    color: #FF4136; /* Red for hover effect */
+    color: #FF4136;
 }
 
-/* Main Content */
 main {
     background-color: #fff;
     color: #000;
@@ -56,64 +52,57 @@ main {
     gap: 20px;
 }
 
-/* Hero Section */
 .hero {
     position: relative;
     height: 800px; 
-    overflow: hidden; /* Ensures children don't overflow the hero section */
+    overflow: hidden;
 }
 
 .hero-background {
-    background-image:url(images/heroimage.webd); /* Use your hero image here */
+    background-image: url(images/heroimage.webd);
     background-size: cover;
     background-position: center;
     height: 100%;
     position: relative;
     display: flex;
     justify-content: space-between;
-    align-items: flex-start; /* Align items to the top */
-    padding: 20px; /* Add some padding for spacing */
+    align-items: flex-start;
+    padding: 20px;
 }
 
 .recipe, .challenge {
-    background-color: rgba(255, 255, 255, 0.8); /* Slightly transparent background */
-    border: 2px solid #001f3f; /* Navy Blue border */
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 2px solid #001f3f;
     border-radius: 10px;
     padding: 15px;
-    max-width: 300px; /* Adjust as needed */
+    max-width: 300px;
 }
 
-/* Positioning */
 .recipe {
-    align-self: flex-start; /* Aligns to the top left */
-    margin-right: auto; /* Optional: keeps it towards the left */
+    align-self: flex-start;
+    margin-right: auto;
 }
 
 .challenge {
-    align-self: flex-end; /* Aligns to the bottom right */
-    margin-left: auto; /* Optional: keeps it towards the right */
+    align-self: flex-end;
+    margin-left: auto;
 }
 
-/* Section Styling */
 section {
     margin-bottom: 20px;
 }
 
 h2 {
-    color: #001f3f; /* Navy Blue for headings */
+    color: #001f3f;
     font-family: Georgia, serif;
     margin-bottom: 10px;
 }
 
-/* Footer Styling */
 footer {
     text-align: center;
     padding: 15px;
-    background-color: #FF4136; /* Red */
+    background-color: #FF4136;
     color: #fff;
     margin-top: 20px;
     font-size: 0.9em;
 }
-
-
-
