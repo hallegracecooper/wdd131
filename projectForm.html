@@ -54,15 +54,12 @@
     </main>
     <<script>
         document.getElementById("wellnessForm").addEventListener("submit", function(event) {
-            event.preventDefault(); // Prevent default form submission
+            event.preventDefault(); 
     
-            // Retrieve form data
             const feedbackData = this.elements['feedback'].value;
     
-            // Save feedback to localStorage
             localStorage.setItem("userFeedback", feedbackData);
     
-            // Redirect to feedback confirmation page
             window.location.href = "https://hallegracecooper.github.io/wdd131//projectFormFeedback.html";
         });
     </script>    
