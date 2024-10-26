@@ -64,7 +64,7 @@ main {
 }
 
 .hero-background {
-    background-image: url('images/heroimage.webp'); /* Use your hero image here */
+    background-image:url(images/heroimage.webd); /* Use your hero image here */
     background-size: cover;
     background-position: center;
     height: 100%;
